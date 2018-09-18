@@ -15,7 +15,7 @@ function printPhotos() {
      */
     fetch(`https://api.flickr.com/services/rest/?method=flickr.photos.search&
           api_key=75a81266e444ea3d6dad9d8154782ff1&
-          tags=${tag}&per_page=25&format=json&nojsoncallback=1`)
+          tags=${tag}&per_page=24&format=json&nojsoncallback=1`)
    .then((response) => {
     return response.json();
     })
@@ -34,7 +34,7 @@ function printPhotos() {
          
          });
          /**
-        Clearing the search input value
+         Clearing the search input value
          */
         tag.value = "";
    })

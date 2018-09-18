@@ -1,7 +1,9 @@
+
 body {
     margin: 0;
     padding: 3rem 10rem 0 2rem;
 }
+
 #pictures {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));    
@@ -15,27 +17,21 @@ body {
 
 }
 
-li:hover {
-    opacity: 0.95;
-    transform: scale(1.02);
-    transition: all 0.3s ease;
-   
-}
-
 div {
     margin: 0 0 5% 5%;
     display: flex;
+    text-align: center;
 }
 
 input[type=text] {
-    background-color: #bcdbff;
-    color: white;
+    background-color: #d4e8ff;
+    color: #2c8fff;
     padding: 12px 20px;
     margin: auto;
     display: flex;
     width: 100%;
-    border-radius:4px;
-    border: 3px solid rgb(255, 255, 255);
+    border-radius:100px;
+    border: 3px solid #c8e1ff;
     outline: none;
     transition: 0.5s;
     -webkit-transition: 0.5s;
@@ -49,11 +45,12 @@ input[type=text]:focus {
 button {
     
     background-color: #ff6262;
-    color: white;
+    color: #ffffff;
     padding: 14px 20px;
     margin: 0 0 0 1em;
     border: none;
-    border-radius: 4px;
+    outline: none;
+    border-radius: 100px;
     cursor: pointer;
 }
 
@@ -61,4 +58,29 @@ button:hover {
     background-color:#ff9a9a;
 }
 
+img {
+    border-radius: 8px;
+}
 
+img:hover {
+    opacity: 0.95;
+    transform: scale(1.01);
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.473);
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    input[type=text] {
+        margin: auto;
+        display: flex;
+        width: 300px;
+    }
+    div {
+        margin: 0;
+    }
+    body {
+        margin: 0 1% 0 1%;
+        padding: 3rem 0rem 0 0rem;
+}
+}
