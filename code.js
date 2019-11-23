@@ -1,6 +1,6 @@
 
 const list = document.querySelector("ul");
-let input = document.querySelector("input");
+const input = document.querySelector("input");
 
 function printPhotos() {
     const tag = input.value;
