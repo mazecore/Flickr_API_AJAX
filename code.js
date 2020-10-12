@@ -15,7 +15,7 @@ function printPhotos() {
                   res.photos.photo.forEach( photo => {
                       const url = `https://farm${photo.farm}.staticflickr.com/${photo.server}/${photo.id}_${photo.secret}.jpg`;
                       const li = document.createElement("li");
-                      li.innerHTML = `<a href=${url}><img src=${url} alt=""></img></a>`;
+                      li.innerHTML = `<a href=${url}><img src=${url} alt=""></a>`;
                       list.append(li);
                   });
       })
